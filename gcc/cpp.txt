@@ -1,0 +1,1 @@
+Both C and C++ use cpp as the preprocessor.

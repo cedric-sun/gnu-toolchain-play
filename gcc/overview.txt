@@ -1,0 +1,12 @@
+c
+				general location
+	preprocessor	cpp	/usr/bin/cpp
+	compiler	cc1	gcc -print-prog-name=cc1
+
+c++
+	preprocessor	cpp, the same as C
+	compiler
+
+other
+	as	assembler
+	ld	linker

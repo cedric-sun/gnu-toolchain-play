@@ -1,0 +1,36 @@
+--dumpmachine
+	print the target machine
+
+--dumpversion
+	print the gcc version
+
+-x <langauge>
+	e.g.	gcc -xc
+		gcc -xc++
+	todo: linker problem
+
+-E
+	stop after preprocessing
+
+-S
+	stop after compilation
+
+-c
+	stop after assembly, i.e. generate object file
+
+-fno-common
+	No common block. This forbids multiple definition of uninitialized global variable.
+
+-fno-stack-protector
+	Remove __stack_chk_fail section.
+
+-fno-asynchronous-unwind-tables
+	Remove eh_frame section.
+
+-fno-builtin
+	Prevent gcc from using builtin optimization e.g. replacing single string literal printf to puts.
+
+-Xlinker <option>
+	pass <option> to the linker
+-Wl,<option>
+	ditto

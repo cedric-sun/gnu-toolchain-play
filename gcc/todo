@@ -1,0 +1,3 @@
+what is -L and -l?
+
+is gcc for c and g++ for c++? why `man g++` takes me to manpage of gcc? why gcc has -xc++ option?

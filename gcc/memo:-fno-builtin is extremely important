@@ -1,0 +1,7 @@
+I was testing which libraries are searched for symbols by default. I use the symbol sin (a function) from libm to see if libm is linked by default.
+
+But even without -lm option, it built.
+
+It turns out that I was using simple statement like 'double a = sin(1.3223)', and gcc just optimized it by storing the result as some constant float. So no actually linking was done against the 'sin' symbol, so of course gcc didn't complain 'symbol sin not found'
+
+use '-fno-builtin', and everything is sane now.

@@ -1,0 +1,11 @@
+</dev/null gcc -xc -E -v -
+	for c
+
+</dev/null gcc -xc++ -E -v -
+	for c++
+
+https://stackoverflow.com/questions/4980819/what-are-the-gcc-default-include-directories
+
+or equivalently just let preprocessor be verbose by:
+
+</dev/null gcc -E -Wp,-v -
